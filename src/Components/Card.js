@@ -34,13 +34,19 @@ const getImage = no => {
     : null;
 };
 
-export const Card = ({data, set_user_answer, user_answer, question_no}) => {
+export const Card = ({
+  data,
+  set_user_answer,
+  user_answer,
+  question_no,
+  transitionAnimation,
+}) => {
   return (
-    <View
+    <Animated.View
       style={{
         borderRadius: 20,
         backgroundColor: 'white',
-        // height: height / 1.5,
+        ...transitionAnimation,
         width: width * 0.9,
         elevation: 10,
         marginTop: height * 0.075,
@@ -125,6 +131,6 @@ export const Card = ({data, set_user_answer, user_answer, question_no}) => {
           onSelect={() => set_user_answer('option_4')}
         />
       </View>
-    </View>
+    </Animated.View>
   );
 };

@@ -33,6 +33,45 @@ const App = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [instructionModal, setInstructionModal] = useState(true);
   const [questions, setQuestions] = useState(RandomizeTheQuestions(data));
+  const xOffset = useRef(new Animated.Value(0)).current;
+
+  const transitionAnimation = index => {
+    return {
+      transform: [
+        {perspective: 800},
+        {
+          scale: xOffset.interpolate({
+            inputRange: [
+              (index - 1) * width,
+              index * width,
+              (index + 1) * width,
+            ],
+            outputRange: [0.25, 1, 0.25],
+          }),
+        },
+        {
+          rotateX: xOffset.interpolate({
+            inputRange: [
+              (index - 1) * width,
+              index * width,
+              (index + 1) * width,
+            ],
+            outputRange: ['45deg', '0deg', '45deg'],
+          }),
+        },
+        {
+          rotateY: xOffset.interpolate({
+            inputRange: [
+              (index - 1) * width,
+              index * width,
+              (index + 1) * width,
+            ],
+            outputRange: ['-45deg', '0deg', '45deg'],
+          }),
+        },
+      ],
+    };
+  };
 
   return (
     <View
@@ -42,10 +81,16 @@ const App = () => {
       }}>
       {!isSubmitted ? (
         <View style={{flex: 1, alignItems: 'center'}}>
-          <FlatList
+          <Animated.FlatList
+            scrollEventThrottle={16}
+            onScroll={Animated.event(
+              [{nativeEvent: {contentOffset: {x: xOffset}}}],
+              {useNativeDriver: true},
+            )}
             data={questions}
             horizontal
             ref={listRef}
+            decelerationRate={'fast'}
             showsHorizontalScrollIndicator={false}
             snapToInterval={width}
             scrollEnabled={false}
@@ -62,6 +107,7 @@ const App = () => {
                 <Card
                   data={item}
                   question_no={ques_no + 1}
+                  transitionAnimation={transitionAnimation(index)}
                   user_answer={user_answer[item.question_no]}
                   set_user_answer={answer =>
                     set_user_answer({
@@ -152,6 +198,7 @@ const App = () => {
               set_user_answer({});
               set_ques_no(0);
               LayoutAnimation.easeInEaseOut();
+              xOffset.setValue(0);
             }}
           />
         </View>
