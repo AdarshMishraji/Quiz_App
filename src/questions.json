@@ -1,0 +1,112 @@
+[
+  {
+    "question_no": 1,
+    "question": "What is the name of this structure which is located in Piazza del Duomo, Italy?",
+    "options": {
+      "option_1": "Colosseum",
+      "option_2": "Leaning Tower of Pisa",
+      "option_3": "Milan Cathedral",
+      "option_4": "Ponte Vecchio"
+    },
+    "correct_option": "option_2"
+  },
+  {
+    "question_no": 2,
+    "question": "This famous statue located in New York City is referred to as?",
+    "options": {
+      "option_1": "Spring Temple Buddha",
+      "option_2": "Christ the Redeemer",
+      "option_3": "Lion-man",
+      "option_4": "Statue of Liberty"
+    },
+    "correct_option": "option_4"
+  },
+  {
+    "question_no": 3,
+    "question": "The structure below located in the Middle East was built thousands of years ago, and still stands today.",
+    "options": {
+      "option_1": "Pharaoh’s Tomb",
+      "option_2": "Joseph’s Tomb",
+      "option_3": "Egyptian Pyramid",
+      "option_4": "Mecca Temple"
+    },
+    "correct_option": "option_3"
+  },
+  {
+    "question_no": 4,
+    "question": "The highest mountain in the world, standing at 8,848 meters and 29,029 feet, with 145 attempts to climb it.",
+    "options": {
+      "option_1": "Makalu",
+      "option_2": "Nanga Parbat",
+      "option_3": "Himalayan Mountains",
+      "option_4": "Mount Everest"
+    },
+    "correct_option": "option_4"
+  },
+  {
+    "question_no": 5,
+    "question": "This is longest wall in the world.",
+    "options": {
+      "option_1": "Kumbhalgarh Fort",
+      "option_2": "Great Wall of China",
+      "option_3": "Amer Fort Jaipur",
+      "option_4": "Walls of Mesopotamia"
+    },
+    "correct_option": "option_2"
+  },
+  {
+    "question_no": 6,
+    "question": "This famed area is located in the mountains, at more than 2,400 metres/8,000 feet above sea level.",
+    "options": {
+      "option_1": "Machu Picchu",
+      "option_2": "Nazca Lines",
+      "option_3": "Choquequirao",
+      "option_4": "Chichen Itza"
+    },
+    "correct_option": "option_1"
+  },
+  {
+    "question_no": 7,
+    "question": "Shah Jahan instructed to build a tomb for his favorite wife, Mumtaz Mahal.",
+    "options": {
+      "option_1": "The Red Taj",
+      "option_2": "Mizo Taj",
+      "option_3": "Bibi Ka Maqbara",
+      "option_4": "The Taj Mahal"
+    },
+    "correct_option": "option_4"
+  },
+  {
+    "question_no": 8,
+    "question": "The opera house was designed by Jørn Utzon from Denmark and it was built between 1959 and 1973.",
+    "options": {
+      "option_1": "Teatro di San Carlo",
+      "option_2": "Guangzhou Drama Center",
+      "option_3": "Sydney Opera House",
+      "option_4": "Bunkamura Orchard Hall"
+    },
+    "correct_option": "option_3"
+  },
+  {
+    "question_no": 9,
+    "question": " This famous American made car became the most popular car in the US in 1965",
+    "options": {
+      "option_1": "Ford F-Series",
+      "option_2": "Ford Mustang",
+      "option_3": "Chevrolet Silverado",
+      "option_4": "Chevrolet Tahoe"
+    },
+    "correct_option": "option_2"
+  },
+  {
+    "question_no": 10,
+    "question": "This specific breed of dog is often confused with a generic term for dogs, but is actually one specific breed.",
+    "options": {
+      "option_1": "Daschund",
+      "option_2": "Pug",
+      "option_3": "Beagle",
+      "option_4": "Chihuahua"
+    },
+    "correct_option": "option_2"
+  }
+]
